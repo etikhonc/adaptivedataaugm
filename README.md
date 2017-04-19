@@ -44,9 +44,10 @@ scale components of an affine transformation.
 
 ## Adaptiveaugm2
 Finetune baseline network after 40 epoch of training. Use adaptive augmentation
-algorithm from the paper to augment 30% of images in each batch. Here
-similar to Randaugm(F)2 we constrain the norm of the parameter vector theta
-be smaller than 0.25, instead of constraining feasible range of rotation, scale
+algorithm from the paper to augment 30% of images in each batch. 
+
+Here similar to Randaugm(F)2 we consider \theta\in\mathbb{R}^6 (as in the original paper) and constraing the norm of
+the parameter vector theta be smaller than 0.25, instead of constraining feasible range of rotation, scale
 and translation vectors.
 
 
